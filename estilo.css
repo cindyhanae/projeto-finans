@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif
+	font-size: 16px;
+}
+
+h1, 
+h2, 
+h4{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.button{
+	color: white;
+	background-color: rgba(0, 132, 255, 0.795);
+	padding: 5px 20px
+}
+
+.button:hover{
+	background-color: rgb(3, 104, 199);
+	color: white;
+}
+
+/* HEADER */
+.nav-item{
+	cursor: pointer;
+	margin: 10px;
+	font-size: 0.9rem;
+}
+
+.nav-link{
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.btn-entrar{
+	padding: 5px 30px;
+	text-transform: uppercase;
+}
+
+/* HERO */
+#home {
+	background: #ffc107;
+	color: white;
+	width: 100vw;
+}
+
+.hero{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.hero-txt{
+	flex-basis: 100%;
+	padding-top: 100px;
+	margin-right: 70px;
+}
+
+.hero-img{
+	flex-basis: 100%;
+	align-items: center;
+}
+
+.titulo{
+	font-size: 4rem;
+}
+
+/* SECTIONS */
+.caixa,
+.caixa2 {
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid #e5e5e5;
+	/* height: 60vh; */
+}
+
+.txt-section,
+.img-section{
+	flex-basis: 100%;
+	margin: 60px 0;
+}
+
+.txt-section{
+	margin: auto;
+}
+
+.img-section{
+	width: 426px;
+}
+
+.box{
+	flex-basis: 100%;
+	text-align: center;
+	margin: 60px 0px;
+}
+
+/* FOOTER */
+footer{
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 0px;
+}
+footer p a {
+	margin: 5px 15px;
+	color: rgba(0, 132, 255, 0.795);
+	text-transform: uppercase;
+	text-decoration: none !important;
+}
+
+footer p a:hover{
+	color: rgb(3, 104, 199);
+}
+
+/* RESPONSIVE */
+/* Small devices (iPhoneX) */
+@media (max-width: 375px) and (min-width: 320px) {
+	.hero{
+		display: block;
+	}
+
+	.hero-txt{
+		padding-bottom: 50px;
+	}
+
+	.hero-img{
+		display: none;
+	}
+
+	.caixa{
+		flex-direction: column-reverse;
+	}
+
+	.caixa2{
+		flex-direction: column;
+	}
+
+	.img-section{
+		width: 80%;
+		margin-inline: auto;
+	}
+
+	.txt-section{
+		text-align: center;
+		padding-bottom: 60px;
+	}
+
+	footer{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	footer p a{
+		margin: 5px;
+	}
+
+	.nav-footer{
+		margin-bottom: 20px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	.nav-item{
+		margin: 0px;
+	}
+
+	.nav-link{
+		letter-spacing: none;
+	}
+
+	.hero-txt{
+		margin-right: 0;
+	}
+	
+	.titulo{
+		font-size: 2rem;
+	}
+
+	.txt-section,
+	.img-section{
+		margin-right: 30px;
+	}
+}

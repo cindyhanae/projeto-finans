@@ -19,7 +19,7 @@
 </ul>
 
 <h2 id="description">Description</h2>
-<p>This app was developed during the web developer course from Udemy and had the objective of practicing Boostratp framework skills and media queries.</p>
+<p>This app was developed during the web development course from Udemy and had the objective of practicing Boostrap framework skills and media queries.</p>
 
 <h2 id="status">Status</h2>
 Finished :heavy_check_mark:
